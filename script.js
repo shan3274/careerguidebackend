@@ -36,7 +36,7 @@ app.post("/chat", async (req, res) => {
 
 // Start the server ////////////////////
 
-const port = "https://careerguide-blush.vercel.app/";
+const port = 5555;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
   console.log(`http://localhost:${port}`);
