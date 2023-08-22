@@ -19,7 +19,9 @@ app.use(express.json());
 const openai = new OpenAI({
   apiKey: process.env.CHATBOT_KEY,
 });
-
+app.get("/", function (req, res) {
+  return res.send({ title: "Hello World" });
+});
 app.post("/chat", async (req, res) => {
   console.log(req.body);
   const { prompt } = req.body;
